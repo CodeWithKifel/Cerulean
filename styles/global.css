@@ -1,0 +1,260 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  --primary: #13a085;
+  --secoundary: #19bc9b;
+  --bg: #f3f3f3;
+  --title: #404040;
+  --text-color: #7f7f7f;
+  --text-bold: #616161;
+  --text-footer: #acd8cc;
+  --text-bold-secundary: #c7e5de;
+  --primary-foregroud: #ffff;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: start;
+  padding: 2rem;
+  gap: 2rem;
+  background: var(--primary);
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  color: var(--primary-foregroud);
+}
+
+.logo h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul a {
+  color: var(--primary-foregroud);
+  background: var(--secoundary);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 16px;
+}
+
+header nav ul a:hover {
+  background: var(--primary);
+  transition: all 0.2s ease-in;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  gap: 12px;
+}
+
+.welcome h2 {
+  color: var(--title);
+  font-weight: bold;
+  font-size: 44px;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--text-bold);
+}
+
+.underline {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: var(--primary-foregroud);
+  padding: 48px;
+}
+
+.frist-content {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.frist-content article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.frist-content article h3 {
+  color: var(--title);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.frist-content button {
+  width: 30%;
+  border: none;
+  padding: 16px;
+  color: var(--primary-foregroud);
+  background: var(--primary);
+}
+
+.content button:hover {
+  background: var(--secoundary);
+  transition: all 0.2s ease-in;
+}
+
+.secound-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.secound-content article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.secound-content img {
+  width: 100%;
+}
+
+.secound-content button {
+  width: 50%;
+  border: none;
+  padding: 16px;
+  color: var(--primary-foregroud);
+  background: var(--primary);
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  gap: 12px;
+}
+
+.tools h2 {
+  color: var(--title);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.tools ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.tools ul li {
+  color: var(--primary-foregroud);
+  background: var(--primary);
+  padding: 24px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools ul li svg {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--text-footer);
+  padding: 60px;
+  gap: 60px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+
+footer ul li {
+  color: var(--primary-foregroud);
+  background: var(--secoundary);
+  padding: 16px;
+}
+
+footer ul li svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bold {
+  color: var(--text-bold-secundary);
+  font-weight: bold;
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
